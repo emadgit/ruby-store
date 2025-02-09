@@ -1,2 +1,11 @@
-<div>Create new product</div>
 <%= link_to "back", products_path %>
+<div>Create new product</div>
+
+<%= form_with model: @product do |form| %>
+    <div>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </div>
+    <div 
+    <%= form.submit %>
+<% end %>
