@@ -1,5 +1,9 @@
 <h1>Products</h1>
 
+<div id="new-product">
+    <%= link_to "new", new_product_path %>
+</div>
+
 <div id="products">
   <% @products.each do |product| %>
     <div>
